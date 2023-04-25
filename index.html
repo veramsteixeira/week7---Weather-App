@@ -16,7 +16,9 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper"></div>
       <div class="weather-app">
+        <div class="overview">
         <h1>New York</h1>
         <ul>
           <li>Friday 05:00</li>
@@ -24,12 +26,18 @@
         </ul>
         <div class="row">
           <div class="col-6">
+             <div class="d-flex weather-temperature">     
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               alt="Clear"
+              class="float-left"
             />
-          </div>
-          12ºC | ºF
+            <div class="float-left"> 
+              <strong>12</strong>
+              <span class="units">ºC | <a href="#"> ºF </a></span>
+              
+            </div>
+         
         </div>
         <div class="col-6">
           <ul>
@@ -37,16 +45,18 @@
             <li>Humidity: 73%</li>
             <li>Wind: 2 km/h</li>
           </ul>
+          </div>
         </div>
-        <small>
-          <a
-            href="https://github.com/veramsteixeira/week7---Weather-App"
-            target="_blank"
-            >Open-source code</a
-          >
-          by Vera Teixeira</small
-        >
       </div>
+      <small>
+        <a
+          href="https://github.com/veramsteixeira/week7---Weather-App"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Vera Teixeira</small
+      >
+        </div>
     </div>
     <script src="src/app.js"></script>
   </body>
